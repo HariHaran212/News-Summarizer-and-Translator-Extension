@@ -1,0 +1,248 @@
+/* Light Theme Background */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+  color: #333;
+  text-align: center;
+  width: 320px;
+  padding: 20px;
+}
+
+/* Light Glass Effect Container */
+.popup-container {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(5px);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Title & Subtitle */
+h1 {
+  font-size: 20px;
+  margin: 1rem auto;
+  background: linear-gradient(to right, #ff8c00, #ff3e00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+  font-size: 12px;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+/* Stylish Button */
+.btn {
+  width: 100%;
+  padding: 12px;
+  margin: .5rem auto;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #ff416c, #ff4b2b);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 5px 15px rgba(255, 71, 71, 0.3);
+}
+
+.btn:hover {
+  background: linear-gradient(135deg, #d34a4a, #ff416c);
+  transform: scale(1.05);
+}
+
+/* Output text area */
+#output-container {
+  margin-top: 15px;
+}
+
+textarea {
+  width: 90%;
+  height: 120px;
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  color: #333;
+  padding: 10px;
+  font-size: 14px;
+  resize: none;
+  text-align: left;
+}
+
+/* Placeholder Style */
+textarea::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Focus Effect */
+textarea:focus {
+  outline: none;
+  border-color: #ff8c00;
+  box-shadow: 0 0 8px rgba(255, 140, 0, 0.5);
+}
+
+/* Copy Buttons */
+.copy-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 10px;
+  margin: .25rem auto;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+  background: linear-gradient(135deg, #e9e9e9, #bababa);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover Effect */
+.copy-btn:hover {
+  background: linear-gradient(135deg, #cecece, #afafaf);
+  transform: scale(1.05);
+}
+
+/* Copy Icon */
+.copy-btn svg {
+  width: 16px;
+  height: 16px;
+  fill: white;
+  transition: 0.3s;
+}
+
+/* Hover Effect for Icon */
+.copy-btn:hover svg {
+  transform: scale(1.1);
+}
+
+/* Label */
+label{
+  font-size: medium;
+}
+
+/* Style for Select Dropdown */
+select {
+  width: 100%;
+  padding: 10px;
+  margin: 0.5rem auto;
+  font-size: 14px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  outline: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* On Hover */
+select:hover {
+  border-color: #ff8c00;
+}
+
+/* On Focus */
+select:focus {
+  box-shadow: 0 0 8px rgba(255, 140, 0, 0.5);
+}
+
+/* Options inside the Dropdown */
+option {
+  background: #ffffff;
+  color: #333;
+}
+
+/* Social Share Buttons Container */
+#share-container {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.share-text {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+/* Social Media Buttons */
+.social-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.share-btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+/* Social Media Button Icons */
+.share-btn img {
+  width: 24px;
+  height: 24px;
+  transition: 0.3s;
+}
+
+/* Hover Effect */
+.share-btn:hover img {
+  transform: scale(1.1);
+}
+
+/* WhatsApp */
+.whatsapp {
+  background-color: #25D366;
+}
+
+.whatsapp:hover {
+  background-color: #1ebe5d;
+}
+
+/* Twitter */
+.twitter {
+  background-color: #1DA1F2;
+}
+
+.twitter:hover {
+  background-color: #0d8bf0;
+}
+
+/* Facebook */
+.facebook {
+  background-color: #1877F2;
+}
+
+.facebook:hover {
+  background-color: #1465d2;
+}
+
+/* LinkedIn */
+.linkedin {
+  background-color: #0077B5;
+}
+
+.linkedin:hover {
+  background-color: #005c92;
+}
+
+/* Telegram */
+.telegram {
+  background-color: #0088cc;
+}
+
+.telegram:hover {
+  background-color: #0077aa;
+}
