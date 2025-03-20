@@ -19,7 +19,7 @@ body {
 }
 
 /* Title & Subtitle */
-h1 {
+h1, h2, h3, h4, h5, h6 {
   font-size: 20px;
   margin: 1rem auto;
   background: linear-gradient(to right, #ff8c00, #ff3e00);
@@ -35,6 +35,11 @@ h1 {
 }
 
 /* Stylish Button */
+button{
+  border: none;
+  outline: none;
+}
+
 .btn {
   width: 100%;
   padding: 12px;
@@ -60,9 +65,9 @@ h1 {
   margin-top: 15px;
 }
 
-textarea {
+.responseText {
   width: 90%;
-  height: 120px;
+  min-height: 120px;
   background: rgba(255, 255, 255, 0.8);
   border: 1px solid rgba(0, 0, 0, 0.2);
   border-radius: 8px;
@@ -71,22 +76,31 @@ textarea {
   font-size: 14px;
   resize: none;
   text-align: left;
+  overflow-wrap: anywhere;
 }
 
 /* Placeholder Style */
-textarea::placeholder {
+.responseText::placeholder {
   color: rgba(0, 0, 0, 0.5);
 }
 
 /* Focus Effect */
-textarea:focus {
+.responseText:focus {
   outline: none;
   border-color: #ff8c00;
   box-shadow: 0 0 8px rgba(255, 140, 0, 0.5);
 }
 
+/* Action buttons container */
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
 /* Copy Buttons */
-.copy-btn {
+.copy-btn, .speak-btn {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -119,6 +133,23 @@ textarea:focus {
 
 /* Hover Effect for Icon */
 .copy-btn:hover svg {
+  transform: scale(1.1);
+}
+
+.speak-btn:hover {
+  background: linear-gradient(135deg, #38a0f7, #00d4e4);
+}
+
+/* Icons */
+.copy-btn svg, .speak-btn svg {
+  width: 16px;
+  height: 16px;
+  fill: white;
+  transition: 0.3s;
+}
+
+/* Hover Effect for Icon */
+.copy-btn:hover svg, .speak-btn:hover svg {
   transform: scale(1.1);
 }
 
@@ -245,4 +276,13 @@ option {
 
 .telegram:hover {
   background-color: #0077aa;
+}
+
+#hidden{
+  display: none;
+}
+
+#translationError{
+  color: red;
+  font-size: 12px;
 }

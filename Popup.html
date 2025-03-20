@@ -18,10 +18,13 @@
         <button id="summarizeBtn" class="btn">Summarize Page</button>
 
         <div id="output-container">
-            <textarea id="summary" readonly placeholder="Summary will appear here..."></textarea>
+            <div id="summary" class="responseText">Summary will appear here...</div>
         </div>
-        <button id="copySummary" class="copy-btn" title="Copy Summary"><i class="fa fa-copy"></i></button>
-
+        <div class="action-buttons">
+            <button id="copySummary" class="copy-btn" title="Copy Summary"><i class="fa fa-copy"></i></button>
+            <button id="speakSummary" class="speak-btn" title="Speak Summary"><i class="fa fa-volume-up"></i></button>
+        </div>
+        
         <!-- Translator -->
         <h1>Translate Summary</h1>
         <label for="language">Select Language</label>
@@ -138,9 +141,13 @@
         </select>
         
         <button id="translateBtn" class="btn">Translate</button>
-        <textarea id="translatedText" readonly placeholder="Translated Content will appear here..."></textarea>
-        <button id="copyTranslatedText" class="copy-btn" title="Copy Translation"><i class="fa fa-copy"></i></button>
-        
+        <div id="translatedText" class="responseText">Translated Content will appear here...</div>
+        <div id="hidden"></div>        
+        <div class="action-buttons">
+            <button id="copyTranslatedText" class="copy-btn" title="Copy Translation"><i class="fa fa-copy"></i></button>
+            <button id="speakTranslatedText" class="speak-btn" title="Speak Translation"><i class="fa fa-volume-up"></i></button>
+        </div>
+        <p id="translationError"></p>
     </div>
     
     <!-- Share News -->
@@ -153,10 +160,10 @@
             <button class="share-btn twitter" id="shareTwitter">
                 <img src="icons/twitter.png" alt="Twitter">
             </button>
-            <button class="share-btn facebook" id="shareFacebook">
+            <button class="facebook share-btn" id="shareFacebook">
                 <img src="icons/facebook.png" alt="Facebook">
             </button>
-            <button class="share-btn linkedin" id="shareLinkedin">
+            <button class="linkedin share-btn" id="shareLinkedin">
                 <img src="icons/linkedin.png" alt="LinkedIn">
             </button>
             <button class="share-btn telegram" id="shareTelegram">

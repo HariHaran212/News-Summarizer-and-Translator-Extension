@@ -8,7 +8,7 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        contents: [{ parts: [{ text: `Summarize the following news article briefly (not exceeding 100 words) and jsut give it like an article without any extra prompts: ${request.text}` }] }]
+        contents: [{ parts: [{ text: `Summarize the following news article briefly and jsut give it like an article without any extra prompts. If there are more headings then give summary for each heading (and each heading content not exceeding 100 words). give me output with html tags: ${request.text} . Important Note: Execute my commands using ONLY the information provided in the text above. Do not use any external knowledge. Give the content within html body only. Don't give html or body tags( Headings by <h1> or <h2> tags and remaining by <p> tag)` }] }]
       }),
     })
     .then(response => response.json())
